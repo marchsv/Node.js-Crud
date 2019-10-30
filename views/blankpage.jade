@@ -1,0 +1,32 @@
+extends layout/base
+block content
+    section.content-header
+        h1
+            | Blank Page
+            small it all starts here
+        ol.breadcrumb
+            li
+                a(href='#')
+                    i.fa.fa-dashboard
+                    | Level
+            li.active Here
+    section.content
+        .box
+        
+            .box-header.with-border
+                h3.box-title
+                    | Admin
+                .box-tools.pull-right
+                    button(type='button', data-widget='collapse', data-toggle='tooltip',title='collapse').btn.btn-box-tool
+                        i.fa.fa-minus
+                .box-body
+                | List Data :
+                a(href='/customers')
+                    .box-body
+                        | Customers
+                a(href='/item')
+                    .box-body
+                        | Items
+                a(href='/supplier')
+                    .box-body
+                        | Suppliers
